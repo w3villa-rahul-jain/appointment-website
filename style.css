@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --light-green-color: #17d3c0;
+  --black: #000000;
+  --white: #fff;
+}
+
+/* --------------common classes ----------------------------- */
+
+.our-container {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+li {
+  list-style-type: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* ____________________-----------------------__nav section ----------------------------- */
+header .navbar-section {
+  /* border: 1px solid black; */
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .navbar-section .nav-brand h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+header .navbar-section .list-itemss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+
+  /* padding: 8px 16px; */
+}
+
+header .navbar-section .list-itemss li a {
+  padding: 10px 20px;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+
+header .navbar-section .list-itemss li:hover a {
+  color: var(--light-green-color);
+  list-style-type: none;
+}
+
+header .navbar-section .list-itemss li a:hover {
+  color: var(--light-green-color);
+  list-style-type: none;
+}
+
+header .navbar-section .appointment-button .common-btn {
+  color: var(--white);
+  background: var(--light-green-color);
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  header .navbar-section {
+    flex-direction: column;
+  }
+  header .navbar-section .list-itemss {
+    display: block;
+    margin: 10px 0px;
+  }
+
+    header .navbar-section .list-itemss li{
+        padding: 8px 0px;
+
+    }
+}
