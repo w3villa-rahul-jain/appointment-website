@@ -50,6 +50,7 @@ a:hover {
 
 button{
   cursor: pointer;
+  outline: none;
 }
 
 p{
@@ -61,9 +62,10 @@ p{
   padding-bottom: 40px;
 }
 
-/* ____________________-----------------------__nav section ----------------------------- */
+/* ------------------------------------------------------------------- */ 
+/* -----------------------__nav section ------------------------------ */ 
+/* ------------------------------------------------------------------- */ 
 .navbar-section {
-  /* border: 1px solid black; */
   overflow: hidden;
   padding: 8px 0px;
   position: relative;
@@ -99,20 +101,18 @@ p{
   margin: 0;
   cursor: pointer;
 }
+
 .navbar-section .list-itemss {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0px;
-
-  /* padding: 8px 16px; */
 }
 
 .navbar-section .list-itemss li a {
   padding: 10px 15px;
   font-size: 16px;
   color: gray;
-  /* border: 1px solid red; */
 }
 
 .navbar-section .list-itemss li:hover a {
@@ -135,8 +135,10 @@ p{
   outline: none;
   border: none;
 }
-/* ------------------------------hero section--------------- */
 
+/* ------------------------------------------------------------------- */ 
+/* -----------------------  hero section ------------------------------ */ 
+/* ------------------------------------------------------------------- */ 
 .hero-section {
   background-image: url(../images/jesse-orrico-rmWtVQN5RzU-unsplash.jpg);
   background-size: cover;
@@ -160,6 +162,7 @@ p{
   color: var(--white);
   padding: 10px 0px;
 }
+
 .hero-section .get-started{
   padding: 10px 20px;
   color: white;
@@ -171,13 +174,19 @@ p{
   font-size: 18px;
 }
 
+.hero-section .get-started i{
+  color: var(--white); 
+}
 
-/* four step solution */
+/* ------------------------------------------------------------------- */ 
+/* -----------------------_four step solution------------------------- */ 
+/* ------------------------------------------------------------------- */ 
 
 .four-step-solution h3, .four-step-solution h5{
     text-align: center;
     font-weight: 700;  
 }
+
 .four-step-solution h5{
   color: var(--light-green-color)
 }
@@ -186,7 +195,6 @@ p{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
-  /* border: 1px solid red; */
   margin-top: 30px;
   text-align: center;
 }
@@ -203,12 +211,10 @@ p{
   margin-top: 10px;
 }
 
-
 .four-step-solution .four-setps-for-solution p{
   overflow: hidden;
   height: 66px;
-  font-size: 14px;
-  
+  font-size: 14px; 
 }
 
 .four-step-solution .four-setps-for-solution .four-step-user-solution{
@@ -219,11 +225,41 @@ p{
 }
 
 
-/* our service section */
 
-.our-services{
+
+.good-service{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.good-service .good-service-text{
+  padding: 20px;
+  align-self: center;
+}
+
+
+.good-service .good-service-text h2{
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.good-service .good-service-text p{
+  font-size: 15px;
+  margin: 15px 0px;
+  color: gray;
+}
+
+.good-service .good-service-text .good-service-btn {
+    color: var(--white);
+    background-color: var(--light-green-color);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.good-service .good-service-text .good-service-btn i{
+  color: var(--white);
 }
 
 
@@ -232,7 +268,24 @@ p{
 
 
 
-/* service test section */
+.good-service .good-service-image{
+  padding: 30px;
+  border: 5px solid var(--light-green-color);
+  border-radius: 30px;
+}
+
+/* ------------------------------------------------------------------- */ 
+/* -----------------------_our service section------------------------- */ 
+/* ------------------------------------------------------------------- */ 
+
+.our-services{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ------------------------------------------------------------------- */ 
+/* ----------------------- service text section------------------------- */ 
+/* ------------------------------------------------------------------- */ 
 
 .service-text {
   text-align: center;
@@ -252,7 +305,6 @@ p{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  /* border: 1px solid red; */
 }
 
 .teeth-card .teeth-card-box {
@@ -261,7 +313,6 @@ p{
   box-shadow: 0 10px 20px rgba(23, 211, 192, .2);
   margin-top: 10px;
   border-top: 5px solid var(--light-green-color);
-  /* border: 4px solid red; */
 }
 
 .teeth-card .teeth-card-box h4 {
@@ -277,7 +328,10 @@ p{
   cursor: pointer;
 }
 
-/* stay connect section  */
+/* ------------------------------------------------------------------- */ 
+/* -----------------------stay connectet section------------------------ */ 
+/* ------------------------------------------------------------------- */ 
+
 .stay-connect{
   display: flex;
   justify-content: space-between;
@@ -312,9 +366,9 @@ p{
   font-size: 20px;
 }
 
-
-
-/* footer  */
+/* ------------------------------------------------------------------- */ 
+/* -----------------------Footer section------------------------- */ 
+/* ------------------------------------------------------------------- */ 
 
 .footer {
   display: grid;
@@ -324,7 +378,6 @@ p{
 }
 
 .f-footer {
-  /* border: 1px solid red; */
   padding: 10px;
 }
 
@@ -342,11 +395,19 @@ p{
   color: gray;
 }
 
+/* ------------------------------------------------------------------- */ 
+/* -----------------------_media query 992------------------------- */ 
+/* ------------------------------------------------------------------- */ 
+
 @media (max-width: 992px) {
   .teeth-card  {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* ------------------------------------------------------------------- */ 
+/* -----------------------media query 768------------------------ */ 
+/* ------------------------------------------------------------------- */ 
 
 @media (max-width: 768px) {
   .navbar-section {
@@ -359,35 +420,39 @@ p{
     display: block;
     margin: 10px 0px;
   }
-
   .navbar-section .list-itemss li {
     padding: 8px 0px;
   }
-
   .four-step-solution .four-setps-for-solution{
     grid-template-columns: 1fr 1fr;
   }
 
-  
 
+  .good-service{
+    grid-template-columns: 1fr;
+  }
   .stay-connect{
     flex-direction: column;
     gap: 10px;
   }
-
   .footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+/* ------------------------------------------------------------------- */ 
+/* -----------------------media query 600 ------------------------- */ 
+/* ------------------------------------------------------------------- */ 
 
+@media (max-width: 600px) {
   .four-step-solution .four-setps-for-solution{
     grid-template-columns: 1fr;
   }
-
   .stay-connect .stay-connect-heading h3 {
     font-size: 20px;
+  }
+  .good-service .good-service-text .good-service-btn {
+    width: 100%;
   }
   .footer {
     grid-template-columns: 1fr;
